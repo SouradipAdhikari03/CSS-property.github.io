@@ -1,0 +1,22 @@
+
+h1{
+    color: rebeccapurple;
+    font-size: 300px;
+    text-align: center;
+}
+
+
+::-webkit-scrollbar{
+    width: 13px;
+    background-color: rgb(58, 55, 55);
+}
+::-webkit-scrollbar-track{
+    width: 20px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background-color: rgb(215, 164, 25);
+    border: 3px solid transparent;
+    background-clip: content-box;
+
+}
