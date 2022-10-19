@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mug{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(97, 19, 19);
+    border-radius: 50%;
+    border:20px solid rgb(95, 11, 11);
+    box-shadow: 0 0 0 20px rgb(97, 19, 19),
+     0 0 0 40px rgb(186, 39, 186),
+     0 0 0 70px rgb(231, 34, 231),
+     0 0 0 72px rgb(186, 39, 186),
+     20px 140px 0 -30px rgb(97, 19, 19),
+     120px 110px 0 -50px rgb(97, 19, 19),
+     90px 170px 0 -45px rgb(97, 19, 19),
+     190px 170px 0 -80px rgb(97, 19, 19),
+     220px 220px 0 -90px rgb(97, 19, 19),
+     170px 200px 0 -95px rgb(97, 19, 19)
+     ;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mug::before{
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 55px;
+    background-color: rgb(200, 17, 200);
+    right: -153px;
+    transform: rotate(91deg);
+    border-radius: 9px;
+    border-left: 0px;
+    transition: 4s ease-in-out;
+    z-index: -1;
+}
+.mug:hover .hov{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 4px solid salmon;
+    background-color: rgb(97, 19, 19);
+    border-radius: 50%;
+    box-shadow: 220px 220px 0 -95px salmon,
+    190px 170px 0 -85px salmon,
+    171px 200px 0 -97px salmon
+    ;
+    border-left: 0;
+    border-top: 0;
+}
