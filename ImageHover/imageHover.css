@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    background-color: goldenrod;
+    display: grid;
+    place-items: center;
+}
+.center_div{
+    height: 350px;
+    width: 750px;
+    background-color: goldenrod;
+    /* border: 1px solid black; */
+    box-shadow: 0 1px 42px 2px rgb(255, 255, 255);
+    border-radius:9px;
+    position:relative;
+    
+    
+}
+.clip{
+    /* border: 1px solid black; */
+    border-radius:9px;
+    box-shadow: 0 1px 42px 2px rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    top: 0;
+    left: 0%;
+    background-repeat: no-repeat;
+    transition: all .5s linear;
+}
+.image1{
+    background-image: url("https://www.pupvine.com/wp-content/uploads/2021/07/German-Shepherd-price-Initial-Costs-And-Additional-Expenses.jpg");
+    background-size: contain;
+    clip-path: polygon(67% 100%, 25% 100%, 10% 0, 74% 0);
+    /* background-position: center;     */
+    
+}
+.image2{
+    background-image: url("https://tootbuzz.com/wp-content/uploads/2022/01/baby-penguin-baby-emperor-penguin-cute-baby-penguin-what-is-a-baby-penguin-called-baby-king-penguin-what-is-a-baby-penguin-called-how-to-draw-a-baby-penguin-a-baby-penguin-what-do-you-call-a-baby-penguin-768x432.jpg");
+    background-size: cover;
+    /* background-size: contain; */
+    background-position: center;
+    clip-path: polygon(33% 100%, 0 100%, 0 0, 18% 0);
+    
+}
+.image3{
+    background-image: url("https://sassytownhouseliving.com/wp-content/uploads/2019/10/Mountain-Hiking-As-A-Couple-5-Tips-You-Need-To-Know-7-1024x772.jpg");
+    background-position: left;
+    /* background-size:cover; */
+    clip-path: polygon(100% 100%, 49% 100%, 68% 0, 100% 0);
+}
+.center_div:hover .clip{
+    
+    clip-path: polygon(100% 0, 0 0, 0 0, 100% 0);
+
+}
+.center_div .clip:hover {
+    clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+    background-size: cover;
+}
