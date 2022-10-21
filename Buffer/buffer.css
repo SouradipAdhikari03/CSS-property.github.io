@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centre_div{
+    height: 330px;
+    width: 330px;
+    /* background-color: wheat; */
+    /* border-radius: 50%;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.outer_circle{
+    height: 230px;
+    width: 230px;
+    /* background-color: wheat; */
+    border-radius: 50%;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    animation: rotation 1s  linear infinite;
+}
+.middle_circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 130px;
+    /* background-color: wheat; */
+    border-radius: 50%;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    animation: rotation 3s  linear infinite ;
+}
+.inner_circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    /* background-color: wheat; */
+    border-radius: 50%;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    animation: rotation 3s  linear infinite reverse;
+}
+.circle{
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50%;
+    animation: rotation 3s  linear infinite reverse;
+}
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg) scale(0.5);
+    }
+    100%{
+        transform: rotate(360deg) scale(1.3);
+    }
+}
