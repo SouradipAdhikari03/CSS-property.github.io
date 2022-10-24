@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(194, 171, 215); */
+}
+.main_div{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(179, 216, 248);
+    padding: 5px;
+    border-radius: 13px;
+
+}
+.input_box{
+    padding: 5px 15px;
+
+}
+.box h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0 10rem 0 10rem;
+    text-transform: uppercase;
+}
+.box .input_box{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}
+.box .input_box input{
+    
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 2px solid blue;
+    background-color: transparent;
+    outline: none;
+}
+.box .input_box label{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+.box input[type="submit"]{
+    background-color: rgb(98, 98, 246);
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+
+}
+.box .input_box input:focus~label,
+.box .input_box input:valid~label
+{
+    top: -20px;
+    left: 0;
+    color: rgb(68, 68, 199);
+    font-size: 12px;
+}
