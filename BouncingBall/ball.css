@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+div ul{
+    display: flex;
+    list-style: none;
+    border-bottom: 12px solid rgb(91, 85, 85);
+}
+div ul li{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    margin: 0 20px ;
+    border-radius: 50%;
+    animation: bouncy 1s linear  infinite  ;
+}
+@keyframes bouncy {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+ul li:nth-child(1){
+    animation-delay: 0.2s;
+    background-color: red;
+}
+ul li:nth-child(2){
+    animation-delay: 0.6s;
+    background-color: blueviolet;
+}
+ul li:nth-child(3){
+    animation-delay: 0.1s;
+    background-color: gold;
+}
+ul li:nth-child(4){
+    animation-delay: 0.3s;
+    background-color: cornflowerblue;
+}
