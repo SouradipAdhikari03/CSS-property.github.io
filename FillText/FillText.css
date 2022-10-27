@@ -26,7 +26,7 @@ h1::before{
     position: absolute;
     color: darkmagenta;
     overflow: hidden;
-    transition: 2s linear;
+    transition: 2.2s linear;
 }
 h1:hover::before{
     width: 100%;
