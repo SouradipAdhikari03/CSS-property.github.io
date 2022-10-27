@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.inner_div{
+    background-color: rgb(71, 211, 118);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inner_div h1{
+    padding: 20px;
+    font-size: 5rem;
+    color: #fff;
+}
+.outer_div{
+    background-color: rgb(71, 211, 118);
+
+}
+.inner_div p{
+    font-size: 30px;
+    /* padding: 30px; */
+    color: #fff;
+}

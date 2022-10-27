@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(111, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 270px;
+    min-width: 250px;
+    width: 470px;
+    background: linear-gradient(45deg,rgb(170, 46, 46),rgb(163, 132, 132));
+    box-shadow: 0 5px 15px 0 black;
+    position: relative;
+    border-radius: 14px;
+    
+}
+.card img{
+    height: 400px;
+    max-width: 100%;
+    position: absolute;
+    top: -50%;
+    left: 35%;
+    transition:all .4s linear;
+}
+.card h2{
+    position: absolute;
+    padding: 10px;
+    left: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.card p{
+    font-size: 15px;
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    text-shadow: 2px 1px rgb(43, 41, 41);
+    padding: 50px 2px;
+    left: 20px;
+    width: 300px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+.card a{
+    position: absolute;
+    text-decoration: none;
+    color: aliceblue;
+    top: 200px;
+    padding: 10px;
+    border-radius: 34px;
+    background: linear-gradient(90deg, rgb(95, 0, 0), rgb(191, 121, 121));
+    border: 2px double rgb(95, 0, 0);
+    margin-left: 20px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+
+} 
+.card a:hover {
+    background: aliceblue;
+    color: rgb(95, 0, 0);
+}
+.card:hover img{
+    left: 70%;
+    transform: scale(1.3);
+
+}
+.card:hover p{
+    opacity: 1;
+    transform: scale(1.1);
+
+}
+.card:hover a{
+    opacity: 1;
+    transform: scale(1.1);
+
+}
