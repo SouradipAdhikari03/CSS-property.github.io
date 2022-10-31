@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    height: 400px;
+    width: 700px;
+    border: 2px solid rgb(147, 86, 205);
+    border-bottom-width: 30px;
+    box-shadow: 0px 0 10px 2px rgb(147, 86, 205);
+    display: flex;
+    justify-content: center;
+}
+.main span{
+    height: 200px;
+    width: 5px;
+    background-color: rgb(103, 97, 97);
+    margin-left: 2.2rem;
+    position: relative;
+    box-shadow: 0 0 90px 1px rgb(42, 41, 43);
+    transform-origin: top;
+}
+.main span::before{
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    box-shadow: 0 0 6px 1px rgb(42, 41, 43);
+}
+.main span:first-child{
+    animation: leftball 2s linear infinite  ;
+}
+.main span:last-child{
+    animation: rightball 2s linear 1s infinite   ;
+
+}
+@keyframes leftball {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(30deg);
+        
+    }
+    50%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        transform: rotate(0deg);
+        
+    }
+}
+@keyframes rightball {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+        
+    }
+    50%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        transform: rotate(0deg);
+        
+    }
+}
