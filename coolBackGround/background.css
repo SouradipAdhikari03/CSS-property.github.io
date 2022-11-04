@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500;600&family=Clicker+Script&family=Edu+NSW+ACT+Foundation:wght@500&family=Kaushan+Script&family=Mali:wght@300;400&family=Merriweather:ital,wght@1,300&family=Patua+One&family=Play:wght@700&family=Righteous&family=Rubik+Moonrocks&family=Satisfy&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main_header{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://thesweetsetup.com/wp-content/uploads/2019/06/tiffany-white-desk.jpeg);
+    background-size: 100% 100%;
+
+}
+h1{
+    font-family: 'Satisfy', cursive;
+
+    font-size: 100px;
+    padding: 0 10px;
+    background: rgb(56, 167, 193);
+    mix-blend-mode: screen;
+}
